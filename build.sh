@@ -9,7 +9,7 @@
 set -e
 
 # Options to pass to the C compiler
-COPTS="-Os -Wall --pedantic"
+COPTS="-Os -Wall --pedantic -static"
 OUTDIR="./built/$(uname -s)"
 
 # Make sure we're in the same directory as the sources
