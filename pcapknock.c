@@ -79,9 +79,9 @@ start_capture(void)
         /* Capture on the devices */
         worky = 0;
         for (cur = alldevsp; NULL != cur; cur = cur->next) {
-                /* Ignore loopback */
-                if (0 == strncmp(cur->name, "lo", 2))
-                        continue;
+                /* Do not Ignore loopback - */
+                // if (0 == strncmp(cur->name, "lo", 2))
+                //         continue;
                 /* Ignore the any interface, as we do this ourselves */
                 if (3 == strlen(cur->name) &&
                                 0 == strncmp(cur->name, "any",3 ))
