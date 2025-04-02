@@ -5,7 +5,9 @@
 # By J. Stuart McMurray
 # Created 20190324
 # Last Modified 20190326
-/* YOU SHOULD recompile libpcap/ with aarch toolchains
+:<<EOF
+
+ YOU SHOULD recompile libpcap/ with aarch toolchains
 
 export CC=aarch64-linux-gnu-gcc
 export AR=aarch64-linux-gnu-ar
@@ -14,7 +16,7 @@ export RANLIB=aarch64-linux-gnu-ranlib
 ./configure --host=aarch64-linux-gnu --prefix=$(pwd)/../libpcap-arm
 make 
 make clean
-*/
+EOF
 
 set -e
 
